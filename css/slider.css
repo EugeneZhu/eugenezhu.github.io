@@ -1,0 +1,109 @@
+.m-scroll {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 4em;
+  margin: auto;
+  background-color: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.m-scroll__title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+.m-scroll__title > div {
+  display: flex;
+  animation: scrollText 20s infinite linear;
+}
+.m-scroll__title p {
+  margin: 0;
+  font-size: 2em;
+  color: #ffffff;
+  transition: all 2s ease;
+}
+.h-scroll {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 8em;
+  margin: auto;
+  background-color: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.h-scroll__title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+.h-scroll__title > div {
+  display: flex;
+  animation: scrollText 30s infinite linear;
+}
+.h-scroll__title img {
+  max-height: 5em;
+  padding: 3em;
+}
+/*div:hover {
+    animation-play-state: paused;
+  }*/
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.n-scroll {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 4em;
+  margin: auto;
+  background-color: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.n-scroll__title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+.n-scroll__title > div {
+  display: flex;
+  animation: scrollText 20s infinite linear;
+}
+.n-scroll__title p {
+  margin: 0;
+  font-size: 2em;
+  color: #ffffff;
+  transition: all 2s ease;
+}
