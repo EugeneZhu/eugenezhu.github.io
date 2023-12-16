@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex">
+    <title>Eugene Zhu</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Logo.ico" />
+    <script>
+		window.addEventListener('load', function() {
+			setTimeout(function() {
+				document.querySelector('.loading').style.transform = 'translateY(-100%)';
+			}, 2000);
+		});
+	</script>
+    <style>
+        a:hover, a:focus {
+            cursor: url(cursorhover.svg) 15 15, auto
+        }
+
+        body {
+            background-color: #61892F;
+            overflow: hidden;
+            scrollbar-width: none; /* Firefox */
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        }
+
+        body::-webkit-scrollbar { /* WebKit */
+            width: 0;
+            height: 0;
+            display: none;
+        }
+
+        @media (max-width: 65em) {
+            body {
+            overflow: auto;
+            scrollbar-width: auto; /* Firefox */
+            -ms-overflow-style: auto;  /* Internet Explorer 10+ */
+            }
+        }
+    </style>
+
+</head>
+
+<!--
+
+    ⠀⠀⠀⠀⠀⠀⠀  ⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀⠀⠀⠀⠀⠀
+      ⠀      ⣸⣿⡏⠀⠀⠀⣠⣶⣾⣿⣿⣿⠿⠿⠿⢿⣿⣿⣿⣄⠀⠀⠀
+      ⠀⣀⣤⣴⣶⣶⣿⡟⠀⠀⠀⢸⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣷⠀        Amogus
+      ⢸⣿⡇⠀⠀⣿⣿⡇⠀⠀⠀⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿
+      ⣿⣿⠁⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣧⠀⠀
+      ⣿⣿⠀⠀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⠀⠀
+      ⠸⣿⣧⡀⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠃⠀⠀
+      ⠀     ⠀⣿⣿⠀⠀⠀⠀⠀ ⣿⣿⡇ ⣽⣿⡏⠁⠀ ⢸⣿⡇⠀⠀⠀
+      ⠀     ⠀⢿⣿⣦⣄⣀⣠⣴⣿⣿⠁⠀⠈⠻⣿⣿⣿⣿⡿⠏⠀⠀⠀⠀
+              ⠈⠛⠻⠿⠿⠿⠿⠋
+
+
+    Hey there, thanks for checking out my website! As a novice web designer I am still learning new ways to make my website better, so I'd love some feedback if you have any! Feel free to reach out to me at Eugene.Zhu2000@gmail.com or https://www.linkedin.com/in/eugenezhu/ with any tips or ideas that you have, I'd greatly appreciate it C:
+
+-->
+
+<body>
+
+    <!--<div id="cursor"></div>-->
+    
+    <header>
+        <div class="container">
+            <nav id="movingmenu">
+                <div class="movinglogo"><a href="home.html"><img src="HomeLogo.png" alt="Eugene Zhu's Logo."></a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="projects.html" class="nav"><img src="projecticon.webp" class="navicon" alt="An image of a project emoji."></a>
+                        <div class="navhover">
+                            <p class="navhover1"><span class="blacktext">Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Projects&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;</span></p>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="aboutme.html" class="nav"><img src="abouticon.webp" class="navicon" alt="An image of a waving hand emoji."></a>
+                        <div class="navhover">
+                            <p class="navhover1"><span class="blacktext">About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;About&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;</span></p>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="aboutme/Resume-Final.pdf" target="_blank" class="nav"><img src="resumeicon.webp" class="navicon" alt="An image of a resume emoji."></a>
+                    <div class="navhover">
+                        <p class="navhover1"><span class="blacktext">Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;Resume&nbsp;&nbsp;&nbsp;∿&nbsp;&nbsp;&nbsp;</span></p>
+                    </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="socialmenu">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/eugenezhu/" target="_blank" class="fa fa-linkedin"></a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="mailto:Eugene.Zhu2000@gmail.com" class="fa fa-envelope"></a>
+                    </li>
+                </ul>
+            </nav>
+            <!--<a href="#" class="scrolltop">&#8593;</a>-->
+        </div>
+
+        <nav class="navbar">
+                <div class="nav-container">
+                    <input class="checkbox" type="checkbox"/>
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <div class="navlogo">
+                        <a href="home.html"><img src="EZ_Logo_WB.webp" alt="Eugene Zhu's Logo."></a>
+                    </div>
+                    <div class="menu-items">
+                        <span><a href="home.html">Home</a></span>
+                        <span><a href="projects.html">Projects</a></span>
+                        <span><a href="aboutme.html">About Me</a></span>
+                        <span><a href="aboutme/Resume-Final.pdf" target="_blank">Resume</a></span>
+                        <span><a href="https://www.linkedin.com/in/eugenezhu/" target="_blank">LinkedIn</a></span>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <div class="homecontainer">
+        <div class="toplayer">
+            <div class="m-scrollprojects">
+                <div class="m-scroll__title">
+                    <div class="blacktext">
+                        <p class="sliderbottom">
+                            UX/UI Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Product Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Visual Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;UX Research&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Service Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Interaction Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Graphic Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Web Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Game Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;
+                        </p>
+                        <p class="sliderbottom">
+                            UX/UI Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Product Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Visual Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;UX Research&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Service Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Interaction Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Graphic Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Web Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Game Design&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img class="homesmile" src="home/Smile.png" alt="An image of a smiling face.">
+            <div class="homepictop">
+                <img class="" src="home/GSHowTo.webp" alt="An image of IPhone mockups showing the Goodself app's How-To pages.">
+                <img class="" src="home/LouisKahn.webp" alt="An image of a poster in a subway depicting a Louis Kahn exhibit (Poster mockup from freepik.com).">
+                <img class="" src="home/Prosper.webp" alt="An image of the Prosper passport.">
+                <img class="" src="home/horizoncam.webp" alt="An image of the Horizoncam digital mock-up.">
+            </div>
+            <div class="homepicbottom">
+                <img class="" src="home/Dinery.webp" alt="An image of the Dinery digital mock-ups.">
+                <img class="" src="home/GSProfile.webp" alt="An image of a person holding a phone showing the Goodself app's profile page.">
+                <img class="" src="home/ProsperBrochure.webp" alt="An image of a Prosper brochure graphic design.">
+                <img class="" src="home/GSBlog.webp" alt="An image of a laptop showing the Goodself website's blog page.">
+            </div>
+            <div class="m-scrollbottom">
+                <div class="m-scroll__title">
+                    <div class="blacktext">
+                        <p class="sliderbottom">
+                            Available for full time roles&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Available for full time roles&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Available for full time roles&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Available for full time roles&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Available for full time roles&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;
+                        </p>
+                        <p class="sliderbottom">
+                            Available for full time roles&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Available for full time roles&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Available for full time roles&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Available for full time roles&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Available for full time roles&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomlayer">
+            <div class="hometop">
+                <p class="white homename">Eugene Zhu</p>
+                <p class="white homejoke">Number one design rule:<br>Always save your work!</p>
+            </div>
+            <p class="white homedesc">Creative Designer</p>
+            <p class="hometextbox">Hey there! I'm Eugene, a product designer based in the Toronto area working toward some kind of world betterment. Currently studying IAT at SFU.</p>
+            <img class="homespin" src="home/SpinWhite.png" alt="An image of the words 'Let's build something amazing together!'">
+            <img class="homestar" src="home/Star.png" alt="An image of a star.">
+            <img class="homeparty" src="home/Party.png" alt="An image of a circle with jagged edges.">
+            <div class="m-scrolltop">
+                <div class="m-scroll__title">
+                    <div>
+                        <p class="slidertop">
+                            Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp; Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;
+                        </p>
+                        <p class="slidertop">
+                            Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp; Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Keep Scrolling&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+        <div class="circle"></div>
+    </div>
+    <div class="homescroll">
+        <div class="homescrollsection">
+            <div class="m-scrollprojects">
+                <div class="m-scroll__title">
+                    <div>
+                        <p class="sliderprojects">
+                            Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;
+                        </p>
+                        <p class="sliderprojects">
+                            Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;Selected Works&nbsp;&nbsp;&nbsp; · &nbsp;&nbsp;&nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="testprojectbottom homedesktop">
+                <!--div class="dinery"><img class="dineryimg" src="ideation/Dinery.webp" alt="An image of the Dinery logo.">
+                    <p class="dinerytitle">Making food ordering more enjoyable</p>
+                    <div class="dineryinline">
+                        <p class="homeborder">
+                            UX Design
+                        </p>
+                        <p class="homeborder">
+                            UI Design
+                        </p>
+                        <p class="homeborder">
+                            User Research
+                        </p>
+                        <p class="homeborder">
+                            Mobile
+                        </p>
+                    </div>
+                </div>
+            <div class="goodself"><img class="goodselfimg" src="ideation/GS.webp" alt="An image of the Goodself logo.">
+                <p class="goodselftitle">Mobile onboarding heuristic evaluation</p>
+                    <div class="goodselfinline">
+                        <p class="homeborder">
+                            User Research
+                        </p>
+                        <p class="homeborder">
+                            UX Design
+                        </p>
+                        <p class="homeborder">
+                            Mobile
+                        </p>
+                    </div>
+                </div>
+            <div class="climaticcrisis"><img class="climaticcrisisimg" src="ideation/Climatic_Crisis.webp" alt="An image of the Climatic Crisis logo.">
+                <p class="climaticcrisistitle">Environmental education through gaming</p>
+                    <div class="climaticcrisisinline">
+                        <p class="homeborder">
+                            Game Design
+                        </p>
+                        <p class="homeborder">
+                            User Research
+                        </p>
+                        <p class="homeborder">
+                            Desktop
+                        </p>
+                    </div>
+                </div>
+                <div class="radicle"><img class="radicleimg" src="ideation/radicle.webp" alt="An image of the Radicle logo.">
+                <p class="radicletitle">Improving our carbon credit software</p>
+                    <div class="radicleinline">
+                        <p class="homeborder">
+                            UX Design
+                        </p>
+                        <p class="homeborder">
+                            UI Design
+                        </p>
+                        <p class="homeborder">
+                            User Research
+                        </p>
+                        <p class="homeborder">
+                            Desktop
+                        </p>
+                    </div>
+                </div>
+                <div class="sideprojects"><img class="sideprojectsimg" src="home.webp" alt="An image of various projects made by me.">
+                <p class="sideprojectstitle">More of my personal/academic projects</p>
+                    <div class="sideprojectsinline">
+                        <p class="homeborder">
+                            Design
+                        </p>
+                        <p class="homeborder">
+                            Art
+                        </p>
+                        <p class="homeborder">
+                            Programming
+                        </p>
+                        <p class="homeborder">
+                            Photography
+                        </p>
+                    </div>
+                </div>-->
+                <a id="dinery" href="ideationsub/dinery.html"><div class="testlink testprojectlines homelinks hover-link"><p class="testp">Dinery App<span class="testdesc">UX/UI Design</span></p></div></a>
+                <div class="popup-image popupImages"><img src="ideation/Dinery.webp" alt="Popup Image"></div>
+                <a id="goodself" href="ideationsub/goodself.html"><div class="testlink testprojectlines homelinks hover-link"><p class="testp">Goodself<span class="testdesc">UX Research</span></p></div></a>
+                <div class="popup-image popupImages"><img src="ideation/GS.webp" alt="Popup Image"></div>
+                <a id="climaticcrisis" href="ideationsub/climaticcrisis.html"><div class="testlink testprojectlines homelinks hover-link"><p class="testp">Climatic Crisis<span class="testdesc">UX Research</span></p></div></a>
+                <div class="popup-image popupImages"><img src="ideation/Climatic_Crisis.webp" alt="Popup Image"></div>
+                <a id="radicle" href="ideationsub/radicle.html"><div class="testlink testprojectlines homelinks hover-link"><p class="testp">BMO Radicle <span class="testdesc">UX Design</span></p></div></a>
+                <div class="popup-image popupImages"><img src="ideation/radicle.webp" alt="Popup Image"></div>
+                <a id="sideprojects" href="projects.html"><div class="testlink"><p class="homelinks hover-link">More Projects</p></div></a>
+                <div class="popup-image popupImages"><img src="home.webp" alt="Popup Image"></div>
+            </div>
+            <div class="one-column">
+                <div class="projectsbottom">
+                    <a href="ideationsub/dinery.html"><img src="ideation/Dinery.webp" alt="An image of the Dinery logo."
+                            class="ideationthumb"></a>
+                    <h3 class="nomargin">UI/UX Design: Dinery App</h3>
+                    <p class="nomargin">Making food ordering more enjoyable</p>
+                    <div class="inline">
+                        <p class="homeborder">
+                            UX Design
+                        </p>
+                        <p class="homeborder">
+                            UI Design
+                        </p>
+                        <p class="homeborder">
+                            User Research
+                        </p>
+                        <p class="homeborder">
+                            Mobile
+                        </p>
+                    </div>
+                </div>
+                <div class="projectsbottom">
+                    <a href="ideationsub/goodself.html"><img src="ideation/GS.webp"
+                            alt="An image of the Goodself logo." class="ideationthumb"></a>
+                    <h3 class="nomargin">UX Research: Goodself</h3>
+                    <p class="nomargin">Mobile onboarding heuristic evaluation</p>
+                    <div class="inline">
+                        <p class="homeborder">
+                            User Research
+                        </p>
+                        <p class="homeborder">
+                            UX Design
+                        </p>
+                        <p class="homeborder">
+                            Mobile
+                        </p>
+                    </div>
+                </div>
+                <div class="projectsbottom">
+                    <a href="ideationsub/climaticcrisis.html"><img src="ideation/Climatic_Crisis.webp"
+                            alt="An image of the Climatic Crisis Banner." class="ideationthumb"></a>
+                    <h3 class="nomargin">UX Research: Climatic Crisis</h3>
+                    <p class="nomargin">Environmental education through gaming</p>
+                    <div class="inline">
+                        <p class="homeborder">
+                            Game Design
+                        </p>
+                        <p class="homeborder">
+                            User Research
+                        </p>
+                        <p class="homeborder">
+                            Desktop
+                        </p>
+                    </div>
+                </div>
+                <div class="projectsbottom">
+                    <a href="ideationsub/radicle.html"><img src="ideation/radicle.webp" alt="An image of the Radicle logo."
+                            class="ideationthumb"></a>
+                    <h3 class="nomargin">Internship: BMO Radicle</h3>
+                    <p class="nomargin">Improving our carbon credit software</p>
+                    <div class="inline">
+                        <p class="homeborder">
+                            UX Design
+                        </p>
+                        <p class="homeborder">
+                            UI Design
+                        </p>
+                        <p class="homeborder">
+                            User Research
+                        </p>
+                        <p class="homeborder">
+                            Desktop
+                        </p>
+                    </div>
+                </div>
+                <div class="projectsbottom">
+                    <a href="projects.html"><img src="home.webp" alt="An image of various projects created by me."
+                            class="ideationthumb"></a>
+                    <h3 class="nomargin">More Projects</h3>
+                    <p class="nomargin">More of my personal/academic projects</p>
+                    <div class="inline">
+                        <p class="homeborder">
+                            Design
+                        </p>
+                        <p class="homeborder">
+                            Art
+                        </p>
+                        <p class="homeborder">
+                            Programming
+                        </p>
+                        <p class="homeborder">
+                            Photography
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script data-cfasync="false" src="css/form-submission-handler.js"></script>
+    <script src="css/navscroll.js"></script>
+    <script src="css/background.js"></script>
+    <script src="css/fadein.js"></script>
+    <script src="css/slide.js"></script>
+    <script src="css/hoverlink.js"></script>
+    <script src="css/hovershow.js"></script>
+    <script src="css/homehover.js"></script>
+
+
+
+</body>
+
+</html>
+  <!--<body>
+    <div class="link-container">
+      <a href="#" class="hover-link">Hover over me</a>
+      <div class="popup-image popupImages" id="popupImages"><img src="ideation/Dinery.webp" alt="Popup Image"></div>
+      <a href="#" class="hover-link">Hover over me</a>
+      <div class="popup-image popupImages" id="popupImages"><img src="ideation/Climatic_Crisis.webp" alt="Popup Image"></div>
+    </div>
+  </body>
+  </html>
+
+-->

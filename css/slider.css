@@ -1,12 +1,43 @@
-.m-scroll {
+.m-scrollbottom {
   display: flex;
-  position: relative;
-  width: 100%;
-  height: 4em;
+  position: absolute;
+  width: 95%;
+  height: 3.5em;
   margin: auto;
   background-color: none;
   overflow: hidden;
-  z-index: 1;
+  bottom: 1em;
+  left: 2.5%;
+  border-top: .1em solid rgb(64, 64, 64); 
+  border-bottom: .1em solid rgb(64, 64, 64); 
+}
+
+.m-scrollprojects {
+  display: flex;
+  position: absolute;
+  width: 95%;
+  height: 3.5em;
+  margin: auto;
+  background-color: none;
+  overflow: hidden;
+  top: 4em;
+  left: 2.5%;
+  border-top: .1em solid rgb(64, 64, 64); 
+  border-bottom: .1em solid rgb(64, 64, 64); 
+}
+
+.m-scrolltop {
+  display: flex;
+  position: absolute;
+  width: 95%;
+  height: 3.5em;
+  margin: auto;
+  background-color: none;
+  overflow: hidden;
+  bottom: 1em;
+  left: 2.5%;
+  border-top: .1em solid white; 
+  border-bottom: .1em solid white; 
 }
 .m-scroll__title {
   display: flex;
@@ -20,14 +51,27 @@
   white-space: nowrap;
   transform: scale(1);
   transition: all 1s ease;
+  bottom: 0;
 }
 .m-scroll__title > div {
   display: flex;
   animation: scrollText 20s infinite linear;
 }
-.m-scroll__title p {
+.sliderbottom {
   margin: 0;
-  font-size: 2em;
+  font-size: 1.5em;
+  color: rgb(64, 64, 64);
+  transition: all 2s ease;
+}
+
+.sliderprojects {
+  font-size: 1.5em;
+  transition: all 2s ease;
+}
+
+.slidertop {
+  margin: 0;
+  font-size: 1.5em;
   color: #ffffff;
   transition: all 2s ease;
 }
@@ -62,6 +106,39 @@
   max-height: 5em;
   padding: 3em;
 }
+
+.p-scroll {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 8em;
+  margin: auto;
+  background-color: none;
+  overflow: hidden;
+  z-index: 1;
+}
+.p-scroll__title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transform: scale(1);
+  transition: all 1s ease;
+}
+.p-scroll__title > div {
+  display: flex;
+  animation: scrollTextReverse 30s infinite linear;
+}
+.p-scroll__title img {
+  max-height: 5em;
+  padding: 3em;
+}
+
 /*div:hover {
     animation-play-state: paused;
   }*/
@@ -71,6 +148,15 @@
   }
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollTextReverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }
 

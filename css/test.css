@@ -1,0 +1,65 @@
+.popup-image {
+    display: none;
+    position: fixed;
+    width: 24em;
+    min-height: 16em;
+    object-fit: fill;
+    transform: translate(0, -50%);
+    z-index: 0;
+  }
+
+  .popup-image img{
+    max-width: 24em;
+    min-height: 16em;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .hover-link:hover + .popup-image {
+    opacity: 1; /* Change opacity on hover */
+  }
+
+  .testlink {
+    display: block;
+    margin-right: 40vw;
+    margin-left: 2em;
+    margin-bottom: 0;
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: .5em;
+    padding-top: .5em;
+}
+
+.testprojectbottom {
+    margin-top: 16em;
+}
+
+.testprojectlines {
+    border-bottom: .05em solid rgb(64, 64, 64);
+}
+
+.testdesc {
+    position: absolute;
+    text-align: center;
+    vertical-align: top;
+    font-weight: 100;
+    right: 0;
+    margin-top: 1em;
+    font-size: .5em;
+    z-index: 2;
+    transform-origin: center;
+}
+
+.testp {
+    padding: 0;
+}
+
+.homelinks {
+    position: relative;
+    padding-right: 20em;
+    padding-bottom: 0;
+    padding-top: 0;
+    z-index: 2;
+    margin-bottom: 0;
+    margin-top: 0;
+}

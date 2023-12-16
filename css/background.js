@@ -11,8 +11,8 @@ $(document).ready(function() {
       $(".climaticcrisis").toggleClass("climaticcrisishover");
     });
 
-    $("#horizoncam").hover(function() {
-      $(".horizoncam").toggleClass("horizoncamhover");
+    $("#goodself").hover(function() {
+      $(".goodself").toggleClass("goodselfhover");
     });
 
     $("#sideprojects").hover(function() {
